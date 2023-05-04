@@ -1,12 +1,15 @@
 body {
-    font-family: 'Roboto'; 
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    font-family: 'Roboto',sans-serif; 
+    min-width: 375px; 
+    width: 100%;
+    margin: 0px;
 }
 .main-container{
-    min-width: 375px; 
-    width: 60%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
 header {
     display: flex;
@@ -35,6 +38,125 @@ header {
     .input-search {
         border: none;
         background: none;
-        font-size: 16px;
     }
+}
+h1, h2 {
+    font-size: 24px;
+}
+.input-search, button, ol {
+    font-size: 16px;
+}
+ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    
+    & ol {
+        margin: 0 0 0 2em;
+    }
+}
+    
+    li {
+        width: 80%;
+        padding-bottom: 15px;
+    }   
+
+.rounded-list  {
+    a {
+    position: relative;
+    display: flex;
+    background: #f7f7f7;
+    color: black;
+    text-decoration: none;
+    border-radius: 1em;
+    height: 72px;
+    align-items: center;
+    
+        &:hover {
+            background: #eee;
+        }
+
+        &:before {
+        content: counter(li);
+        counter-increment: li;
+        position: initial;
+        margin-top: -0.3em;
+        margin-left: -1em;
+        background: $li-icon-color;
+        color: white;
+        height: 2em;
+        width: 2em;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 2em;
+        transition: all .3s ease-out;
+        display: grid;
+        align-items: center;
+        }
+    }
+}
+.fa-mobile-screen-button, .fa-list-ul{
+    color: #7e7e7e ;
+}
+ .fa-store {
+    color: $li-icon-color;
+ }
+.button-function {
+    i {
+        margin: 30px;
+    }
+}
+.restaurants {
+    background-color: $main-color;
+    .card-restaurants{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.card-content {
+    width: 80%;
+    align-self: center;
+}
+.img-restaurants {
+    position: relative;
+    height: 15em;
+    .position-image{
+        position: absolute;
+        z-index: 1;
+    }
+    .position-txt {
+        position: absolute;
+        top: 360px;
+        width: 600px;
+        height: 40px;
+        z-index: 2;
+    }
+    p {
+        position: absolute;
+        top: 19px;
+        right: 39px;
+        background-color: $card-badge-color;
+        width: 80px;
+        height: 29px;
+        text-align: center;
+        color: $badge-text-color;
+    }
+}
+article {
+    background-color: white;
+    border-radius: 15px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 231px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+
+    }
+}
+.first-letter {
+    &::first-letter {
+        text-transform: uppercase;
+      }      
 }
