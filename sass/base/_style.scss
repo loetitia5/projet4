@@ -145,6 +145,7 @@ ol {
 article {
     background-color: white;
     border-radius: 15px;
+    margin-bottom: 15px;
 
     img {
         object-fit: cover;
@@ -155,8 +156,57 @@ article {
 
     }
 }
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 5px;
+    }
+    .icon {
+        position: absolute;
+        z-index: 1;
+        top: 1em;
+        right: 2em;
+        i {
+            width: 22px;
+            height: 21px;
+        }
+       
+    }
+}
+/*
 .first-letter {
     &::first-letter {
         text-transform: uppercase;
       }      
+}*/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    .logo-footer {
+        margin-left: 35px;
+    
+        img {
+            width: 137px;
+            height: 27px;
+            filter: invert(1);
+    }
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+    }
 }

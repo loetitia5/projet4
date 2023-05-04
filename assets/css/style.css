@@ -184,6 +184,7 @@ li {
 article {
   background-color: white;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 article img {
   object-fit: cover;
@@ -193,8 +194,58 @@ article img {
   border-top-left-radius: 15px;
 }
 
-.first-letter::first-letter {
-  text-transform: uppercase;
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card-txt h3 {
+  margin: 0;
+}
+.card-txt p {
+  margin: 5px;
+}
+.card-txt .icon {
+  position: absolute;
+  z-index: 1;
+  top: 1em;
+  right: 2em;
+}
+.card-txt .icon i {
+  width: 22px;
+  height: 21px;
+}
+
+/*
+.first-letter {
+    &::first-letter {
+        text-transform: uppercase;
+      }      
+}*/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer .logo-footer {
+  margin-left: 35px;
+}
+footer .logo-footer img {
+  width: 137px;
+  height: 27px;
+  filter: invert(1);
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+footer ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,8 +4,6 @@
 
 @mixins 
 */
-$button: $li-icon-color 65%, $button-icon-color 123%;
-
 @mixin gradient($direction, $button) { background: -webkit-linear-gradient($direction, $button);
 }
 .announces {
