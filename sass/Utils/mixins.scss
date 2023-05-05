@@ -6,6 +6,7 @@
 */
 @mixin gradient($direction, $button) { background: -webkit-linear-gradient($direction, $button);
 }
+
 .announces {
     display: flex;
     flex-direction: column;
