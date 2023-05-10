@@ -168,17 +168,6 @@ li {
   position: relative;
   height: 15em;
 }
-.img-restaurants .position-image {
-  position: absolute;
-  z-index: 1;
-}
-.img-restaurants .position-txt {
-  position: absolute;
-  top: 360px;
-  width: 600px;
-  height: 40px;
-  z-index: 2;
-}
 .img-restaurants p {
   position: absolute;
   top: 19px;
@@ -188,6 +177,7 @@ li {
   height: 29px;
   text-align: center;
   color: #008766;
+  border-radius: 2px;
 }
 
 article {
@@ -223,6 +213,11 @@ article img {
 .card-txt .icon i {
   width: 22px;
   height: 21px;
+  transition: all 0.5s;
+}
+.card-txt .icon:hover, .card-txt .icon:focus {
+  background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
+  box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
 span {
