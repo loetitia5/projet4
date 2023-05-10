@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto',sans-serif; 
+    font-family: $writing-type; 
     min-width: 375px; 
     margin: 0px;
 }
@@ -18,7 +18,7 @@ header {
     .logo {
         min-width: 100%; 
         img {
-            font-size: 30px;
+            font-size: $txt * 2;
         }
     }
 }
@@ -38,11 +38,13 @@ header {
         background: none;
     }
 }
+
 h1, h2 {
-    font-size: 24px;
+    font-size: $txt + 9;
 }
-.input-search, button, ol {
-    font-size: 16px;
+.input-search, button, ol, .txt{
+    font-size: $txt + 1;
+    font-family: $writing-type;
 }
 ol {
     counter-reset: li;
@@ -218,7 +220,7 @@ footer {
 }
 footer {
     p {
-        font-size: 19px;
+        font-size: $txt + 1;
     }
     .hover {
         cursor: pointer;

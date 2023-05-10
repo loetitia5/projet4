@@ -1,10 +1,22 @@
-/**$breakpoints: {
-    desktop: 1440px
-};
+$breakpoints: (
+    breakpoints-desktop: 1024px,
+    breakpoints-tablet: 768px,
+);
+/*
+@mixins breakpoint-tablet {
+    @media screen and { min-width: map-get($breakpoints,breakpoint-tablet);
+        
+    }
+}
 
-@mixins 
+@mixins breakpoint-desktop {
+    @media screen and { min-width: map-get($breakpoints,breakpoint-desktop);
+        
+    }
+}
 */
-@mixin gradient($direction, $button) { background: -webkit-linear-gradient($direction, $button);
+@mixin gradient($direction, $button) { 
+    background: -webkit-linear-gradient($direction, $button);
 }
 
 .announces {
@@ -20,13 +32,12 @@
     }
     p {
         font-weight: 300;
-        font-size: 18px;
+        font-size: $txt + 3;
         width: 70%;
     }
 }
 button {
     font-weight: 500;
-    font-size: 16px;
     color: white;
     height: 3em;
     border: none;
