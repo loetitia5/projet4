@@ -4,7 +4,6 @@ body {
     margin: 0px;
 }
 .main-container{
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,12 +179,9 @@ article {
        
     }
 }
-/*
-.first-letter {
-    &::first-letter {
-        text-transform: uppercase;
-      }      
-}*/
+span {
+    text-transform: uppercase;
+}
 object {
     width: 100%;
     height: 14em;

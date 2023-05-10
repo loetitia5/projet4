@@ -42,7 +42,36 @@ section {
         h1 {
             width: 70%;
             font-family: 'Shrikhand', cursive;
-            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+}
+.card-menu {
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+        height: 27px;
+        margin-left: 15px;
+        border-bottom: solid 3px  $card-badge-color;
+        width: 10%;
+    }
+}
+.menu-restaurant {
+    display: flex;
+    flex-direction: column;
+    article {
+        margin: 15px;
+        position: relative;
+        h3 {
+            margin: 10px 0 5px 5px;
+        }
+        p {
+            margin: 0 0 5px 5px;
+        }
+        .price {
+            position: absolute;
+            top: 38px;
+            right: 15px;
         }
     }
 }

@@ -218,12 +218,10 @@ article img {
   height: 21px;
 }
 
-/*
-.first-letter {
-    &::first-letter {
-        text-transform: uppercase;
-      }      
-}*/
+span {
+  text-transform: uppercase;
+}
+
 object {
   width: 100%;
   height: 14em;
@@ -322,7 +320,36 @@ section .img img {
 .card-food .title h1 {
   width: 70%;
   font-family: "Shrikhand", cursive;
-  font-weight: bold;
+  margin-left: 10px;
+}
+
+.card-menu h2 {
+  font-size: 16px;
+  font-weight: 300;
+  height: 27px;
+  margin-left: 15px;
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+}
+
+.menu-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.menu-restaurant article {
+  margin: 15px;
+  position: relative;
+}
+.menu-restaurant article h3 {
+  margin: 10px 0 5px 5px;
+}
+.menu-restaurant article p {
+  margin: 0 0 5px 5px;
+}
+.menu-restaurant article .price {
+  position: absolute;
+  top: 38px;
+  right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
