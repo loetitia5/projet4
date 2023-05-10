@@ -1,0 +1,48 @@
+.arrow {
+    display: flex;
+    align-self: center;
+    padding-left: 10%;
+    a {
+        text-decoration: none;
+    
+        i {
+            display: flex;
+            color: black;
+            width: 17px;
+            height: 16px;
+        }
+    }
+}
+section {
+    position: relative;
+    .img {
+        width: 100%;
+        position: absolute;
+        img {
+            object-fit: cover;
+            height: 275px;
+            width: 100%;
+        }
+    }
+}
+.card-food {
+    position: absolute;
+    background: #f7f7f7;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: 212px;
+    display: flex;
+    flex-direction: column;
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        h1 {
+            width: 70%;
+            font-family: 'Shrikhand', cursive;
+            font-weight: bold;
+        }
+    }
+}
