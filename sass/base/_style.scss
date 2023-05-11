@@ -169,14 +169,31 @@ article {
         i {
             width: 22px;
             height: 21px;
-            transition: all .5s;
+            transition: .5s; 
         }
         &:hover, &:focus { 
+            animation: fa-heart 1000ms infinite;
             @include gradient(bottom, $button);
             box-shadow: 0px 4px 10px rgba(0, 0, 0.25);
+            animation-fill-mode: none;
+            
         }
        
+        
     }
+}
+@keyframes fa-heart {
+    0% {
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    50% {
+        transform: scaleX(.50);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+    
 }
 span {
     text-transform: uppercase;

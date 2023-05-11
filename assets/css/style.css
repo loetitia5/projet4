@@ -213,13 +213,27 @@ article img {
 .card-txt .icon i {
   width: 22px;
   height: 21px;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 .card-txt .icon:hover, .card-txt .icon:focus {
+  animation: fa-heart 1000ms infinite;
   background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
   box-shadow: 0px 4px 10px rgb(0, 0, 0);
+  animation-fill-mode: none;
 }
 
+@keyframes fa-heart {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 span {
   text-transform: uppercase;
 }
