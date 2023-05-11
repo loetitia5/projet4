@@ -1,18 +1,7 @@
 /*#89C8FA;
 #003A68;*/
-/*
-@mixins breakpoint-tablet {
-    @media screen and { min-width: map-get($breakpoints,breakpoint-tablet);
-
-    }
-}
-
-@mixins breakpoint-desktop {
-    @media screen and { min-width: map-get($breakpoints,breakpoint-desktop);
-
-    }
-}
-*/
+@mixins breakpoint-tablet {}
+@mixins breakpoint-desktop {}
 .announces {
   display: flex;
   flex-direction: column;
@@ -37,7 +26,6 @@ button {
   height: 3em;
   border: none;
   background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
-  box-shadow: 0px 4px 10px rgb(0, 0, 0);
   border-radius: 25px;
 }
 
@@ -177,7 +165,10 @@ li {
   height: 29px;
   text-align: center;
   color: #008766;
-  border-radius: 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
@@ -197,6 +188,7 @@ article img {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: baseline;
 }
 .card-txt h3 {
   margin: 0;
@@ -218,7 +210,6 @@ article img {
 .card-txt .icon:hover, .card-txt .icon:focus {
   animation: fa-heart 1000ms infinite;
   background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
-  box-shadow: 0px 4px 10px rgb(0, 0, 0);
   animation-fill-mode: none;
 }
 
