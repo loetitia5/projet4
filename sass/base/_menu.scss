@@ -7,7 +7,7 @@
     
         i {
             display: flex;
-            color: black;
+            color: $main-text-color;
             width: 17px;
             height: 16px;
         }
@@ -17,7 +17,7 @@ section {
     position: relative;
     .img {
         width: 100%;
-        position: absolute;
+      
         img {
             object-fit: cover;
             height: 275px;
@@ -26,18 +26,16 @@ section {
     }
 }
 .card-food {
-    position: absolute;
-    background: #f7f7f7;
+    
+    background: $second-background-color;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    top: 212px;
-    display: flex;
-    flex-direction: column;
+
+    @include flex(column,none,none);
+    
     .title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex(row,none);
         width: 100%;
         h1 {
             width: 70%;
@@ -57,8 +55,8 @@ section {
     }
 }
 .menu-restaurant {
-    display: flex;
-    flex-direction: column;
+    @include flex(column,none,none);
+    
     article {
         margin: 15px;
         position: relative;

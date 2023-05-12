@@ -3,17 +3,13 @@ body {
     min-width: 375px; 
     margin: 0px;
 }
+
 .main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    @include flex(column,none,none);
 }
 header {
-    display: flex;
-    flex-direction: row;
+    @include flex(row,none,none);
     text-align: center;
-    width: 100%;
     
     .logo {
         min-width: 100%; 
@@ -23,14 +19,11 @@ header {
     }
 }
 .bar-search {
-    display: flex;
-    flex-direction: row;
+    @include flex(row,center);
+    
     gap: 17px;
-    width: 100%;
     height: 50px;
     background: $second-color;
-    justify-content: center;
-    align-items: center;
     padding-left: 36px;
 
     .input-search {
@@ -38,7 +31,33 @@ header {
         background: none;
     }
 }
-
+.announces {
+    @include flex(column,none,center);
+    text-align: center;
+    background-color: $main-color;
+    width: 100%;
+    height: 16rem;
+    @include breakpoints-tablet {
+        height: 13rem;
+    }
+    h1 {
+        font-weight: 700;
+        width: 75%;
+    }
+    p {
+        font-weight: 300;
+        font-size: $txt + 3;
+        width: 90%;
+    }
+}
+button {
+    font-weight: 500;
+    color: $neutral-color;
+    height: 3em;
+    border: none;
+    @include gradient(bottom, $button);
+    border-radius: 25px;
+}
 h1, h2 {
     font-size: $txt + 9;
 }
@@ -62,16 +81,35 @@ ol {
     }   
 
 .rounded-list  {
+    @include breakpoints-tablet {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        .grid1 {
+            @include breakpoints-tablet {
+                grid-column: 1/3;
+            }
+        }
+        .grid2 {
+            @include breakpoints-tablet {
+                grid-column: 3/5;
+            }
+        }
+        .grid3 {
+            @include breakpoints-tablet {
+                grid-column: 2/4;
+            }
+        }
+    }
     button {
     position: relative;
-    display: flex;
-    background: #f7f7f7;
-    border: 1px solid #f6f6f6;
-    color: black;
+    @include flex(none,none,center);
+    background: $second-background-color;
+    border: 1px solid $second-border-color;
+    color: $main-text-color;
     text-decoration: none;
     border-radius: 1em;
     height: 72px;
-    align-items: center;
     width: 90%;
     
         &:hover {
@@ -85,7 +123,7 @@ ol {
         margin-top: -0.3em;
         margin-left: -1.3em;
         background: $li-icon-color;
-        color: white;
+        color: $neutral-color;
         height: 2em;
         width: 2em;
         text-align: center;
@@ -111,13 +149,24 @@ ol {
 .restaurants {
     background-color: $main-color;
     .card-restaurants{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,center);
     }
 }
 .card-content {
     width: 80%;
     align-self: center;
+    @include breakpoints-tablet {
+      /*  @include flex(row,none,none); */
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 2em;    
+    }
+    article {
+        @include breakpoints-tablet {
+            width: 50%;
+        }
+    }
 }
 .img-restaurants {
     position: relative;
@@ -133,13 +182,11 @@ ol {
         text-align: center;
         color: $badge-text-color;
         border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(none,center);
     }
 }
 article {
-    background-color: white;
+    background-color: $neutral-color;
     border-radius: 15px;
     margin-bottom: 15px;
 
@@ -153,10 +200,8 @@ article {
     }
 }
 .card-txt {
-    display: flex;
-    flex-direction: column;
+    @include flex(column,none,baseline);
     position: relative;
-    align-items: baseline;
     
     h3 {
         margin: 0;
@@ -164,38 +209,89 @@ article {
     p {
         margin: 5px;
     }
-    .icon {
+    .fa-heart {
         position: absolute;
         z-index: 1;
         top: 1em;
         right: 2em;
+        background-color: transparent;
 
         i {
             width: 22px;
             height: 21px;
-            transition: .5s; 
         }
-        &:hover, &:focus { 
-            animation: fa-heart 1000ms infinite;
-            @include gradient(bottom, $button);
-            animation-fill-mode: none;
-            
+        &:hover { 
+            animation: heart 1s 0s forwards;
         }
-       
-
     }
 }
-@keyframes fa-heart {
+@keyframes heart {
     0% {
-        transform: scaleX(0);
-        opacity: .1;
-    }
-    50% {
-        transform: scaleX(.50);
-    }
-    100% {
-        transform: scaleX(1);
-    }
+        background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      10% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      20% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      30% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      40% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      50% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      60% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      70% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      80% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      90% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+      100% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
     
 }
 span {
@@ -204,15 +300,28 @@ span {
 object {
     width: 100%;
     height: 14em;
+    position: relative;
+    @include breakpoints-tablet {
+        height: 5em;
+    }
 }
 footer {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
+    background-color: $footer-color;
+    color: $neutral-color;
+    @include flex(column,none,none);
+    @include breakpoints-tablet {
+        flex-direction: row;
+        justify-content: end;    
+    }
+    
     .logo-footer {
         margin-left: 35px;
         margin-top: 10px;
+        @include breakpoints-tablet {
+            order: 2;
+            margin: 15px;
+            align-self: end;
+        }
     
         img {
             width: 137px;
@@ -222,13 +331,16 @@ footer {
     }
     ul {
         list-style-type: none;
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,center);
+        @include breakpoints-tablet {
+            flex-direction: row;
+            align-items: end;
+        }
         li {
             display: flex;
-            flex-direction: row;
-            align-items: center;
             gap: 10px;
+            @include breakpoints-tablet {
+            }
             p {
                 margin: 0;
             }

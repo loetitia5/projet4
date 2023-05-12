@@ -1,34 +1,5 @@
 /*#89C8FA;
 #003A68;*/
-@mixins breakpoint-tablet {}
-@mixins breakpoint-desktop {}
-.announces {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #D2D2D2;
-  height: 20rem;
-}
-.announces h1 {
-  font-weight: 700;
-  width: 50%;
-}
-.announces p {
-  font-weight: 300;
-  font-size: 18px;
-  width: 70%;
-}
-
-button {
-  font-weight: 500;
-  color: white;
-  height: 3em;
-  border: none;
-  background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
-  border-radius: 25px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   min-width: 375px;
@@ -38,15 +9,16 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
+  align-items: none;
+  justify-content: none;
 }
 
 header {
   display: flex;
   flex-direction: row;
+  align-items: none;
+  justify-content: none;
   text-align: center;
-  width: 100%;
 }
 header .logo {
   min-width: 100%;
@@ -58,17 +30,50 @@ header .logo img {
 .bar-search {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 17px;
-  width: 100%;
   height: 50px;
   background: #EAEAEA;
-  justify-content: center;
-  align-items: center;
   padding-left: 36px;
 }
 .bar-search .input-search {
   border: none;
   background: none;
+}
+
+.announces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  text-align: center;
+  background-color: #D2D2D2;
+  width: 100%;
+  height: 16rem;
+}
+@media screen and (min-width: 768px) {
+  .announces {
+    height: 13rem;
+  }
+}
+.announces h1 {
+  font-weight: 700;
+  width: 75%;
+}
+.announces p {
+  font-weight: 300;
+  font-size: 18px;
+  width: 90%;
+}
+
+button {
+  font-weight: 500;
+  color: white;
+  height: 3em;
+  border: none;
+  background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
+  border-radius: 25px;
 }
 
 h1, h2 {
@@ -94,16 +99,40 @@ li {
   padding-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .rounded-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .rounded-list .grid1 {
+    grid-column: 1/3;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .rounded-list .grid2 {
+    grid-column: 3/5;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .rounded-list .grid3 {
+    grid-column: 2/4;
+  }
+}
 .rounded-list button {
   position: relative;
   display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: none;
   background: #f7f7f7;
   border: 1px solid #f6f6f6;
   color: black;
   text-decoration: none;
   border-radius: 1em;
   height: 72px;
-  align-items: center;
   width: 90%;
 }
 .rounded-list button:hover {
@@ -145,11 +174,27 @@ li {
 .restaurants .card-restaurants {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: none;
 }
 
 .card-content {
   width: 80%;
   align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    /*  @include flex(row,none,none); */
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-content article {
+    width: 50%;
+  }
 }
 
 .img-restaurants {
@@ -167,8 +212,9 @@ li {
   color: #008766;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
+  flex-direction: none;
   align-items: center;
+  justify-content: center;
 }
 
 article {
@@ -187,8 +233,9 @@ article img {
 .card-txt {
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: baseline;
+  justify-content: none;
+  position: relative;
 }
 .card-txt h3 {
   margin: 0;
@@ -196,33 +243,87 @@ article img {
 .card-txt p {
   margin: 5px;
 }
-.card-txt .icon {
+.card-txt .fa-heart {
   position: absolute;
   z-index: 1;
   top: 1em;
   right: 2em;
+  background-color: transparent;
 }
-.card-txt .icon i {
+.card-txt .fa-heart i {
   width: 22px;
   height: 21px;
-  transition: 0.5s;
 }
-.card-txt .icon:hover, .card-txt .icon:focus {
-  animation: fa-heart 1000ms infinite;
-  background: -webkit-linear-gradient(bottom, #9356DC 65%, #FF79D4 123%);
-  animation-fill-mode: none;
+.card-txt .fa-heart:hover {
+  animation: heart 1s 0s forwards;
 }
 
-@keyframes fa-heart {
+@keyframes heart {
   0% {
-    transform: scaleX(0);
-    opacity: 0.1;
+    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
   }
   50% {
-    transform: scaleX(0.5);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
   }
   100% {
-    transform: scaleX(1);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
   }
 }
 span {
@@ -232,17 +333,38 @@ span {
 object {
   width: 100%;
   height: 14em;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  object {
+    height: 5em;
+  }
 }
 
 footer {
-  background-color: black;
+  background-color: #353535;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: none;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: end;
+  }
 }
 footer .logo-footer {
   margin-left: 35px;
   margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer .logo-footer {
+    order: 2;
+    margin: 15px;
+    align-self: end;
+  }
 }
 footer .logo-footer img {
   width: 137px;
@@ -253,11 +375,17 @@ footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: none;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+    align-items: end;
+  }
 }
 footer ul li {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 10px;
 }
 footer ul li p {
@@ -300,7 +428,6 @@ section {
 }
 section .img {
   width: 100%;
-  position: absolute;
 }
 section .img img {
   object-fit: cover;
@@ -309,19 +436,20 @@ section .img img {
 }
 
 .card-food {
-  position: absolute;
   background: #f7f7f7;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  top: 212px;
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: none;
 }
 .card-food .title {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: none;
   width: 100%;
 }
 .card-food .title h1 {
@@ -342,6 +470,8 @@ section .img img {
 .menu-restaurant {
   display: flex;
   flex-direction: column;
+  align-items: none;
+  justify-content: none;
 }
 .menu-restaurant article {
   margin: 15px;

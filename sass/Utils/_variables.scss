@@ -5,6 +5,10 @@ $button-icon-color: #FF79D4;
 $li-icon-color: #9356DC;
 $card-badge-color: #99E2D0;
 $badge-text-color: #008766;
+$main-text-color: black;
+$neutral-color: white;
+$second-background-color: #f7f7f7;
+$second-border-color: #f6f6f6;
 /*#89C8FA;
 #003A68;*/
 
@@ -15,6 +19,6 @@ $txt: 15px;
 $writing-type: 'Roboto',sans-serif;
 
 $breakpoints: (
-    breakpoints-desktop: 1440px,
+    breakpoints-desktop: 1024px,
     breakpoints-tablet: 768px
 );

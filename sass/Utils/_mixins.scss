@@ -1,11 +1,11 @@
-@mixins breakpoint-tablet {
-    @media screen and ( min-width: map-get($breakpoints,breakpoint-tablet)) {
-        
+@mixin breakpoints-tablet {
+    @media screen and ( min-width: map-get($breakpoints,breakpoints-tablet)) {
+        @content;
     }
 }
 
-@mixins breakpoint-desktop {
-    @media screen and ( min-width: map-get($breakpoints,breakpoint-desktop)){
+@mixin breakpoints-desktop {
+    @media screen and ( min-width: map-get($breakpoints,breakpoints-desktop)){
         
     }
 }
@@ -14,28 +14,9 @@
     background: -webkit-linear-gradient($direction, $button);
 }
 
-.announces {
+@mixin flex($placement, $justify, $align :center){
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: $main-color;
-    height: 20rem;
-    h1 {
-        font-weight: 700;
-        width: 50%;
-    }
-    p {
-        font-weight: 300;
-        font-size: $txt + 3;
-        width: 70%;
-    }
-}
-button {
-    font-weight: 500;
-    color: white;
-    height: 3em;
-    border: none;
-    @include gradient(bottom, $button);
-    border-radius: 25px;
+    flex-direction: $placement;
+    align-items: $align;
+    justify-content: $justify;
 }
