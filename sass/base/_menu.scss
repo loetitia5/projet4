@@ -13,38 +13,51 @@
         }
     }
 }
-section {
+.menu {
     position: relative;
-    .img {
+    display: flow-root;
+    
+    img {
+        object-fit: cover;
+        height: 275px;
         width: 100%;
-      
-        img {
-            object-fit: cover;
-            height: 275px;
-            width: 100%;
+       
         }
     }
-}
 .card-food {
-    
+    margin-block-start: -56px;
+    opacity: 99%;
     background: $second-background-color;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
     @include flex(column,none,none);
-    
+    @include breakpoints-tablet {
+        width: 80%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+    }
     .title {
         @include flex(row,none);
         width: 100%;
+        @include breakpoints-tablet {
+            justify-content: center;
+        }
         h1 {
             width: 70%;
             font-family: 'Shrikhand', cursive;
             margin-left: 10px;
+            @include breakpoints-tablet {
+                width: 33%;
+            }
         }
     }
 }
 .card-menu {
+    @include breakpoints-tablet {
+        width: 42em;
+    }
     h2 {
         font-size: $txt + 1;
         font-weight: 300;
@@ -52,7 +65,11 @@ section {
         margin-left: 15px;
         border-bottom: solid 3px  $card-badge-color;
         width: 10%;
+        @include breakpoints-tablet {
+            width: 5%;
+        }
     }
+    
 }
 .menu-restaurant {
     @include flex(column,none,none);
@@ -60,10 +77,15 @@ section {
     article {
         margin: 15px;
         position: relative;
+      /*  @include breakpoints-tablet {
+            margin-left: 50px;
+            margin-right: 50px;
+        }*/
         h3 {
             margin: 10px 0 5px 5px;
         }
         p {
+            font-size: $txt;
             margin: 0 0 5px 5px;
         }
         .price {
@@ -71,5 +93,14 @@ section {
             top: 38px;
             right: 15px;
         }
+    }
+}
+.command {
+    display: flex;
+    height: 7em;
+    justify-content: center;
+    align-items: center;
+    .control {
+        width: 186px;
     }
 }
