@@ -78,6 +78,11 @@ ol {
     & ol {
         margin: 0 0 0 2em;
     }
+    &.rounded-list {
+        @include breakpoints-desktop { 
+            display: flex;
+        }
+    }
 }
     
     li {
@@ -85,7 +90,7 @@ ol {
         padding-bottom: 15px;
     }   
 
-.rounded-list  {
+.rounded-list  { 
     @include breakpoints-tablet {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

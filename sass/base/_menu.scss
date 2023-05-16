@@ -77,10 +77,11 @@
     article {
         margin: 15px;
         position: relative;
-      /*  @include breakpoints-tablet {
+       @include breakpoints-tablet {
             margin-left: 50px;
             margin-right: 50px;
-        }*/
+            }
+        
         h3 {
             margin: 10px 0 5px 5px;
         }
@@ -93,8 +94,23 @@
             top: 38px;
             right: 15px;
         }
+        .check {
+            visibility: hidden;;
+             &:hover {
+                display: flex;
+                 visibility: visible;
+                 width: 10%;
+                 background-color: $card-badge-color;
+                 }
+             & i:checked, & i:hover {
+                 visibility: visible;
+                 color: white;
+                 }
+             }
     }
 }
+
+    
 .command {
     display: flex;
     height: 7em;

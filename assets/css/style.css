@@ -98,6 +98,11 @@ ol {
 ol ol {
   margin: 0 0 0 2em;
 }
+@media screen and (min-width: 1024px) {
+  ol.rounded-list {
+    display: flex;
+  }
+}
 
 li {
   width: 100%;
@@ -548,10 +553,12 @@ footer .hover a {
 .menu-restaurant article {
   margin: 15px;
   position: relative;
-  /*  @include breakpoints-tablet {
-        margin-left: 50px;
-        margin-right: 50px;
-    }*/
+}
+@media screen and (min-width: 768px) {
+  .menu-restaurant article {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 .menu-restaurant article h3 {
   margin: 10px 0 5px 5px;
@@ -564,6 +571,19 @@ footer .hover a {
   position: absolute;
   top: 38px;
   right: 15px;
+}
+.menu-restaurant article .check {
+  visibility: hidden;
+}
+.menu-restaurant article .check:hover {
+  display: flex;
+  visibility: visible;
+  width: 10%;
+  background-color: #99E2D0;
+}
+.menu-restaurant article .check i:checked, .menu-restaurant article .check i:hover {
+  visibility: visible;
+  color: white;
 }
 
 .command {
