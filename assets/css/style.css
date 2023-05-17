@@ -580,10 +580,20 @@ footer .hover a {
   visibility: visible;
   width: 10%;
   background-color: #99E2D0;
+  position: absolute;
+  height: 4em;
+  right: -57px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
-.menu-restaurant article .check i:checked, .menu-restaurant article .check i:hover {
+.menu-restaurant article .check i:checked, .menu-restaurant article .check i {
   visibility: visible;
   color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .command {

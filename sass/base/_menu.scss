@@ -98,13 +98,23 @@
             visibility: hidden;;
              &:hover {
                 display: flex;
-                 visibility: visible;
-                 width: 10%;
-                 background-color: $card-badge-color;
+                visibility: visible;
+                width: 10%;
+                background-color: $card-badge-color;
+                position: absolute;
+                height: 4em;
+                right: -57px;
+                top: 0;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
                  }
-             & i:checked, & i:hover {
+             & i:checked, & i {
                  visibility: visible;
                  color: white;
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
                  }
              }
     }
