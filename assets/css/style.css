@@ -524,7 +524,86 @@ footer .hover a {
     width: 33%;
   }
 }
+.card-food .fa-heart {
+  background-color: transparent;
+  margin-right: 20px;
+}
+.card-food .fa-heart i {
+  width: 22px;
+  height: 21px;
+}
+.card-food .fa-heart:hover {
+  animation: heart 1s 0s forwards;
+}
 
+@keyframes heart {
+  0% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+}
 @media screen and (min-width: 768px) {
   .card-menu {
     width: 42em;
@@ -532,7 +611,7 @@ footer .hover a {
 }
 .card-menu h2 {
   font-size: 16px;
-  font-weight: 300;
+  text-transform: uppercase;
   height: 27px;
   margin-left: 15px;
   border-bottom: solid 3px #99E2D0;
@@ -549,28 +628,34 @@ footer .hover a {
   flex-direction: column;
   align-items: none;
   justify-content: none;
+  transition: padding-right 450ms ease-in-out;
 }
 .menu-restaurant article {
   margin: 15px;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .menu-restaurant article {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+  height: 4em;
 }
 .menu-restaurant article h3 {
   margin: 10px 0 5px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-restaurant article p {
   font-size: 15px;
   margin: 0 0 5px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-restaurant article .price {
   position: absolute;
   top: 38px;
   right: 15px;
+}
+.menu-restaurant article:hover .check {
+  opacity: 1;
+  transform: translate(-50px);
 }
 .menu-restaurant article .check {
   visibility: hidden;
