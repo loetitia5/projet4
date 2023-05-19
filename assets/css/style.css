@@ -9,15 +9,11 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  align-items: none;
-  justify-content: none;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  align-items: none;
-  justify-content: none;
   text-align: center;
 }
 header .logo {
@@ -29,7 +25,7 @@ header .logo {
 }
 header .logo img {
   height: 44px;
-  font-size: 30px;
+  width: 40%;
 }
 
 .bar-search {
@@ -51,7 +47,6 @@ header .logo img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: none;
   text-align: center;
   background-color: #D2D2D2;
   width: 100%;
@@ -134,9 +129,7 @@ li {
 .rounded-list button {
   position: relative;
   display: flex;
-  flex-direction: none;
   align-items: center;
-  justify-content: none;
   background: #f7f7f7;
   border: 1px solid #f6f6f6;
   color: black;
@@ -185,7 +178,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: none;
 }
 
 .card-content {
@@ -194,7 +186,6 @@ li {
 }
 @media screen and (min-width: 768px) {
   .card-content {
-    /*  @include flex(row,none,none); */
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -222,17 +213,16 @@ li {
   color: #008766;
   border-radius: 5px;
   display: flex;
-  flex-direction: none;
   align-items: center;
   justify-content: center;
 }
 
-article {
+.card {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
 }
-article img {
+.card img {
   object-fit: cover;
   width: 100%;
   height: 231px;
@@ -244,7 +234,6 @@ article img {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  justify-content: none;
   position: relative;
 }
 .card-txt h3 {
@@ -356,13 +345,11 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: none;
-  justify-content: none;
 }
 @media screen and (min-width: 768px) {
   footer {
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
   }
 }
 footer .logo-footer {
@@ -404,7 +391,6 @@ footer ul li {
 }
 @media screen and (min-width: 768px) {
   footer ul li {
-    gap: 0;
     padding-bottom: 0;
   }
 }
@@ -486,13 +472,10 @@ footer .hover a {
   margin-block-start: -56px;
   opacity: 99%;
   background: #f7f7f7;
-  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: none;
-  justify-content: none;
 }
 @media screen and (min-width: 768px) {
   .card-food {
@@ -506,7 +489,6 @@ footer .hover a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: none;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -524,15 +506,179 @@ footer .hover a {
     width: 33%;
   }
 }
-.card-food .fa-heart {
+
+.full-menus {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.full-menus h2 {
+  font-size: 16px;
+  font-weight: 300;
+  height: 27px;
+  margin-left: 15px;
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+}
+@media screen and (min-width: 768px) {
+  .full-menus h2 {
+    width: 5%;
+  }
+}
+.full-menus .card-menu {
+  padding-right: 17px;
+}
+.full-menus .card-menu:hover .menu-price {
+  right: 6em;
+}
+.full-menus .card-menu:hover .check {
+  display: flex;
+  visibility: visible;
+  width: 10%;
+  background-color: #99E2D0;
+  position: absolute;
+  height: 4em;
+  right: -57px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.menus {
+  display: grid;
+  animation-duration: 1s;
+  animation-name: slidein;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  position: relative;
+  height: 4em;
+  /*
+  &:hover .fa-circle-check {
+      transform: rotate(360deg);
+  }*/
+}
+@media screen and (min-width: 768px) {
+  .menus {
+    width: 100%;
+  }
+}
+.menus:hover .check {
+  visibility: visible;
+  transition-duration: 1s;
+}
+.menus h3, .menus p {
+  margin: 0 10px;
+}
+.menus p {
+  font-size: 15px;
+}
+.menus .menu-price {
+  position: absolute;
+  justify-self: end;
+  align-self: flex-end;
+  top: -1px;
+  right: -14px;
+}
+.menus .menu-price .price {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+.menus .menu-price .price:hover {
+  right: 53px;
+}
+.menus:hover .check {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.menus .check {
+  visibility: hidden;
+  transition-duration: 1s;
+  background-color: #99E2D0;
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  width: 10%;
+  height: 4em;
+  right: -51px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menus .check:hover {
+  visibility: visible;
+}
+.menus .check i {
+  visibility: visible;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+    margin-top: 25%;
+  }
+  70% {
+    visibility: visible;
+    margin-top: 20%;
+  }
+  80% {
+    visibility: visible;
+    margin-top: 15%;
+  }
+  90% {
+    visibility: visible;
+    margin-top: 10%;
+  }
+  95% {
+    visibility: visible;
+    margin-top: 5%;
+  }
+  to {
+    margin-top: 0%;
+    visibility: visible;
+  }
+}
+/* 
+.menu {
+    @include breakpoints-tablet {
+
+    }
+    h2 {
+        font-size: $txt + 1;
+        font-weight: 300;
+        height: 27px;
+        margin-left: 15px;
+        border-bottom: solid 3px  $card-badge-color;
+        width: 10%;
+        @include breakpoints-tablet {
+            width: 5%;
+        }
+    }
+
+}*/
+.fa-heart {
   background-color: transparent;
   margin-right: 20px;
+  align-self: center;
 }
-.card-food .fa-heart i {
+.fa-heart i {
   width: 22px;
   height: 21px;
 }
-.card-food .fa-heart:hover {
+.fa-heart:hover {
   animation: heart 1s 0s forwards;
 }
 
@@ -604,12 +750,7 @@ footer .hover a {
     font-weight: bold;
   }
 }
-@media screen and (min-width: 768px) {
-  .card-menu {
-    width: 42em;
-  }
-}
-.card-menu h2 {
+.menu h2 {
   font-size: 16px;
   text-transform: uppercase;
   height: 27px;
@@ -618,69 +759,72 @@ footer .hover a {
   width: 10%;
 }
 @media screen and (min-width: 768px) {
-  .card-menu h2 {
+  .menu h2 {
     width: 5%;
   }
 }
 
+/*
 .menu-restaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: none;
-  justify-content: none;
-  transition: padding-right 450ms ease-in-out;
-}
-.menu-restaurant article {
-  margin: 15px;
-  position: relative;
-  height: 4em;
-}
-.menu-restaurant article h3 {
-  margin: 10px 0 5px 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu-restaurant article p {
-  font-size: 15px;
-  margin: 0 0 5px 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu-restaurant article .price {
-  position: absolute;
-  top: 38px;
-  right: 15px;
-}
-.menu-restaurant article:hover .check {
-  opacity: 1;
-  transform: translate(-50px);
-}
-.menu-restaurant article .check {
-  visibility: hidden;
-}
-.menu-restaurant article .check:hover {
-  display: flex;
-  visibility: visible;
-  width: 10%;
-  background-color: #99E2D0;
-  position: absolute;
-  height: 4em;
-  right: -57px;
-  top: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.menu-restaurant article .check i:checked, .menu-restaurant article .check i {
-  visibility: visible;
-  color: white;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @include flex(column,none,none);
+    transition: padding-right 450ms ease-in-out;
+    article {
+        margin: 15px;
+        position: relative;
+        height: 4em;
+       &:hover .menu-price {
+            right: 8em;
+        }
+        &:hover .check {
+            display: flex;
+            visibility: visible;
+            width: 10%;
+            background-color: $card-badge-color;
+            position: absolute;
+            height: 4em;
+            right: -57px;
+            top: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+             }
+        h3 {
+            margin: 10px 0 5px 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        p {
+            font-size: $txt;
+            margin: 0 0 5px 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .menu-price {
+            position: absolute;
+            top: 38px;
+            right: 15px;
+        }
+        &:hover .check {
+            opacity: 1;
+            transform: translate(-350px);
+        }
+        .check {
+            visibility: hidden;
+
+             & i:checked, & i {
+                 visibility: visible;
+                 color: white;
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 }
+             }
+    }
 }
 
+   */
 .command {
   display: flex;
   height: 7em;

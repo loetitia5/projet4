@@ -28,10 +28,10 @@
     margin-block-start: -56px;
     opacity: 99%;
     background: $second-background-color;
-    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    @include flex(column,none,none);
+    display: flex;
+    flex-direction: column;
     @include breakpoints-tablet {
         width: 80%;
         margin-inline: auto;
@@ -39,7 +39,9 @@
         align-items: center;
     }
     .title {
-        @include flex(row,none);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 100%;
         @include breakpoints-tablet {
             justify-content: center;
@@ -53,19 +55,184 @@
             }
         }
     }
-    .fa-heart {
-        background-color: transparent;
-        margin-right: 20px;
-
-        i {
-            width: 22px;
-            height: 21px;
-        }
-        &:hover { 
-            animation: heart 1s 0s forwards;
+}
+.full-menus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h2 {
+        font-size: $txt + 1;
+        font-weight: 300;
+        height: 27px;
+        margin-left: 15px;
+        border-bottom: solid 3px $card-badge-color;
+        width: 10%;
+        @include breakpoints-tablet {
+            width: 5%;
         }
     }
+    .card-menu {
+        padding-right: 17px;
+    
+        &:hover .menu-price {
+            right: 6em;
+        }
+        &:hover .check {
+            display: flex;
+            visibility: visible;
+            width: 10%;
+            background-color: $card-badge-color;
+            position: absolute;
+            height: 4em;
+            right: -57px;
+            top: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            }
+    }
+} 
+.menus {
+    display: grid;
+    animation-duration: 1s;
+    animation-name: slidein;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    height: 4em;
+    @include breakpoints-tablet {
+        width: 100%;
+    }
+    &:hover .check {
+        visibility: visible;
+        transition-duration: 1s;
+    }
+    h3, p {
+        margin: 0 10px;
+    }
+    p {
+        font-size: $txt;  
+    }
+    .menu-price {
+        position: absolute;
+        justify-self: end;
+        align-self: flex-end;
+        top: -1px;
+        right: -14px;
+        .price {
+            position: absolute;
+            top: 30px;
+            right: 15px;
+            &:hover {
+                right: 53px;
+            }
+        }
+    }
+    &:hover .check{
+        opacity: 1;
+        transform: translate(-50px);
+        }   /*
+            &:hover .fa-circle-check {
+                transform: rotate(360deg);
+            }*/
+    .check {
+        visibility: hidden;
+        transition-duration: 1s;
+        background-color: $card-badge-color;
+        position: absolute;
+        display: flex;
+        opacity: 0;
+        width: 10%;
+        height: 4em;
+        right: -51px;
+        top: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        &:hover {
+            visibility: visible;
+        } 
+        & i {
+            visibility: visible;
+            color: white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            }
+        }
+    }
+
+    @keyframes slidein {
+        from {
+          margin-top: 100%;
+          
+          visibility:hidden;
+        }
+      
+       50%{
+            visibility:hidden;
+          
+        }
+        60%{
+            visibility:visible;
+          margin-top: 25%;
+        }
+         70%{
+            visibility:visible;
+          margin-top: 20%;
+            }
+         80%{
+            visibility:visible;
+          margin-top: 15%;
+          
+        }
+         90%{
+            visibility:visible;
+            margin-top: 10%;
+            }
+         95%{
+            visibility:visible;
+          margin-top: 5%;
+           }
+      
+        to {
+          margin-top: 0%;
+          visibility: visible;
+        }
+      }
+    
+   /* 
+.menu {
+    @include breakpoints-tablet {
+            
+    }
+    h2 {
+        font-size: $txt + 1;
+        font-weight: 300;
+        height: 27px;
+        margin-left: 15px;
+        border-bottom: solid 3px  $card-badge-color;
+        width: 10%;
+        @include breakpoints-tablet {
+            width: 5%;
+        }
+    }
+        
+}*/
+
+.fa-heart {
+    background-color: transparent;
+    margin-right: 20px;
+    align-self: center;
+    i {
+        width: 22px;
+        height: 21px;
+    }
+    &:hover { 
+        animation: heart 1s 0s forwards;
+    }
 }
+
 @keyframes heart {
     0% {
         background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
@@ -134,9 +301,9 @@
         font-weight: bold;
       }
 }
-.card-menu {
+.menu {
     @include breakpoints-tablet {
-        width: 42em;
+        
     }
     h2 {
         font-size: $txt + 1;
@@ -150,7 +317,7 @@
         }
     }
     
-}
+}/*
 .menu-restaurant {
     @include flex(column,none,none);
     transition: padding-right 450ms ease-in-out;
@@ -158,7 +325,21 @@
         margin: 15px;
         position: relative;
         height: 4em;
-        
+       &:hover .menu-price {
+            right: 8em;
+        }
+        &:hover .check {
+            display: flex;
+            visibility: visible;
+            width: 10%;
+            background-color: $card-badge-color;
+            position: absolute;
+            height: 4em;
+            right: -57px;
+            top: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+             }
         h3 {
             margin: 10px 0 5px 5px;
             white-space: nowrap;
@@ -172,29 +353,18 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        .price {
+        .menu-price {
             position: absolute;
             top: 38px;
             right: 15px;
         }
         &:hover .check {
             opacity: 1;
-            transform: translate(-50px);
+            transform: translate(-350px);
         }
         .check {
-            visibility: hidden;;
-             &:hover {
-                display: flex;
-                visibility: visible;
-                width: 10%;
-                background-color: $card-badge-color;
-                position: absolute;
-                height: 4em;
-                right: -57px;
-                top: 0;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-                 }
+            visibility: hidden;
+            
              & i:checked, & i {
                  visibility: visible;
                  color: white;
@@ -207,7 +377,7 @@
     }
 }
 
-    
+   */
 .command {
     display: flex;
     height: 7em;

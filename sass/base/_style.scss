@@ -5,10 +5,12 @@ body {
 }
 
 .main-container{
-    @include flex(column,none,none);
+    display: flex;
+    flex-direction: column;
 }
 header {
-    @include flex(row,none,none);
+    display: flex;
+    flex-direction: row;
     text-align: center;
     
     .logo {
@@ -19,13 +21,15 @@ header {
         align-items: center;
         img {
             height: 44px;
-            font-size: $txt * 2;
+            width: 40%;
         }
     }
 }
 .bar-search {
-    @include flex(row,center);
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 17px;
     height: 3em;
     background: $second-color;
@@ -37,7 +41,9 @@ header {
     }
 }
 .announces {
-    @include flex(column,none,center);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: $main-color;
     width: 100%;
@@ -113,7 +119,8 @@ ol {
     }
     button {
     position: relative;
-    @include flex(none,none,center);
+    display: flex;
+    align-items: center;
     background: $second-background-color;
     border: 1px solid $second-border-color;
     color: $main-text-color;
@@ -159,14 +166,15 @@ ol {
 .restaurants {
     background-color: $main-color;
     .card-restaurants{
-        @include flex(column,none,center);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 .card-content {
     width: 80%;
     align-self: center;
     @include breakpoints-tablet {
-      /*  @include flex(row,none,none); */
         display: flex;
         flex-direction: row;
         width: 90%;
@@ -192,10 +200,12 @@ ol {
         text-align: center;
         color: $badge-text-color;
         border-radius: 5px;
-        @include flex(none,center);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
-article {
+.card {
     background-color: $neutral-color;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -210,7 +220,9 @@ article {
     }
 }
 .card-txt {
-    @include flex(column,none,baseline);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     position: relative;
     
     h3 {
@@ -318,10 +330,11 @@ object {
 footer {
     background-color: $footer-color;
     color: $neutral-color;
-    @include flex(column,none,none);
+    display: flex;
+    flex-direction: column;
     @include breakpoints-tablet {
         flex-direction: row;
-        justify-content: end;    
+        justify-content: center;    
     }
     
     .logo-footer {
@@ -354,7 +367,6 @@ footer {
             display: flex;
             gap: 10px;
             @include breakpoints-tablet {
-                gap: 0;
                 padding-bottom: 0;
             }
             p {
