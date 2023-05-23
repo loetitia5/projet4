@@ -247,75 +247,7 @@ ol {
         }
     }
 }
-@keyframes heart {
-    0% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      10% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      20% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      30% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      40% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      50% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      60% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      70% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      80% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      90% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      100% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-    
-}
+
 span {
     text-transform: uppercase;
 }
@@ -360,7 +292,6 @@ footer {
         @include flex(column,none,center);
         @include breakpoints-tablet {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
             align-items: end;
         }
         li {
@@ -377,7 +308,7 @@ footer {
 }
 footer {
     p {
-        font-size: $txt + 1;
+        font-size: $txt;
     }
     .hover {
         cursor: pointer;
@@ -397,24 +328,27 @@ footer {
     @include breakpoints-tablet {
     grid-column-end: 3;
     grid-column-start: 2;
+    width: 12em
     }
 }
 .grid-en2 {
     @include breakpoints-tablet {
     grid-column-end: 4;
     grid-column-start: 3;
+
     }
 }
 .grid-end3 {
     @include breakpoints-tablet {
     grid-column-end: 5;
     grid-column-start: 4;
+    margin: 0px 9px;
     }
 }
 .grid-end4 {
     @include breakpoints-tablet {
     grid-column-end: 6;
     grid-column-start: 5;
-    width: 6em;
+    width: 5em;
     }
 }

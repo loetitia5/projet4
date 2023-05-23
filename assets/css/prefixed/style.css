@@ -1,5 +1,240 @@
 /*#89C8FA;
 #003A68;*/
+@-webkit-keyframes heart {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(0%, #9356DC), color-stop(0%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(10%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(20%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(30%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(40%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(50%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(60%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(70%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(80%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(90%, white));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+}
+@keyframes heart {
+  0% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(0%, #9356DC), color-stop(0%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 0%, white 0%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(10%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 10%, white 10%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(20%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 20%, white 20%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(30%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 30%, white 30%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(40%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 40%, white 40%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(50%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 50%, white 50%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(60%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 60%, white 60%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(70%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 70%, white 70%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(80%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 80%, white 80%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(90%, white));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 90%, white 90%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 100%);
+    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 100%;
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+    margin-top: 25%;
+  }
+  70% {
+    visibility: visible;
+    margin-top: 20%;
+  }
+  80% {
+    visibility: visible;
+    margin-top: 15%;
+  }
+  90% {
+    visibility: visible;
+    margin-top: 10%;
+  }
+  95% {
+    visibility: visible;
+    margin-top: 5%;
+  }
+  to {
+    margin-top: 0%;
+    visibility: visible;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+    margin-top: 25%;
+  }
+  70% {
+    visibility: visible;
+    margin-top: 20%;
+  }
+  80% {
+    visibility: visible;
+    margin-top: 15%;
+  }
+  90% {
+    visibility: visible;
+    margin-top: 10%;
+  }
+  95% {
+    visibility: visible;
+    margin-top: 5%;
+  }
+  to {
+    margin-top: 0%;
+    visibility: visible;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   min-width: 375px;
@@ -41,7 +276,7 @@ header .logo {
 }
 header .logo img {
   height: 44px;
-  font-size: 30px;
+  width: 40%;
 }
 
 .bar-search {
@@ -279,12 +514,12 @@ li {
           justify-content: center;
 }
 
-article {
+.card {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
 }
-article img {
+.card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -328,176 +563,6 @@ article img {
           animation: heart 1s 0s forwards;
 }
 
-@-webkit-keyframes heart {
-  0% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(0%, #9356DC), color-stop(0%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  10% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(10%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  20% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(20%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  30% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(30%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  40% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(40%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  50% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(50%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  60% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(60%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  70% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(70%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  80% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(80%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  90% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(90%, white));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-}
-
-@keyframes heart {
-  0% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(0%, #9356DC), color-stop(0%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 0%, white 0%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  10% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(10%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 10%, white 10%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  20% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(20%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 20%, white 20%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  30% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(30%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 30%, white 30%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  40% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(40%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 40%, white 40%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  50% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(50%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 50%, white 50%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  60% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(60%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 60%, white 60%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  70% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(70%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 70%, white 70%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  80% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(80%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 80%, white 80%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  90% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(90%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 90%, white 90%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 100%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-}
 span {
   text-transform: uppercase;
 }
@@ -530,9 +595,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 footer .logo-footer {
@@ -591,7 +656,6 @@ footer ul li {
 }
 @media screen and (min-width: 768px) {
   footer ul li {
-    gap: 0;
     padding-bottom: 0;
   }
 }
@@ -600,7 +664,7 @@ footer ul li p {
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 15px;
 }
 footer .hover {
   cursor: pointer;
@@ -627,6 +691,7 @@ footer .hover a {
   .grid-end1 {
     grid-column-end: 3;
     grid-column-start: 2;
+    width: 13em;
   }
 }
 
@@ -688,7 +753,6 @@ footer .hover a {
           margin-block-start: -56px;
   opacity: 99%;
   background: #f7f7f7;
-  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: -webkit-box;
@@ -719,6 +783,9 @@ footer .hover a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -738,131 +805,8 @@ footer .hover a {
     width: 33%;
   }
 }
-.card-food .fa-heart {
-  background-color: transparent;
-  margin-right: 20px;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.card-food .fa-heart i {
-  width: 22px;
-  height: 21px;
-}
-.card-food .fa-heart:hover {
-  -webkit-animation: heart 1s 0s forwards;
-          animation: heart 1s 0s forwards;
-}
 
-@keyframes heart {
-  0% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(0%, #9356DC), color-stop(0%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 0%, white 0%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  10% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(10%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 10%, white 10%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  20% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(20%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 20%, white 20%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  30% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(30%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 30%, white 30%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  40% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(40%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 40%, white 40%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  50% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(50%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 50%, white 50%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  60% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(60%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 60%, white 60%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  70% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(70%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 70%, white 70%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  80% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(80%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 80%, white 80%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  90% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(90%, white));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 90%, white 90%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-  100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: -o-linear-gradient(bottom, #FF79DA, #9356DC 100%);
-    background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-}
-@media screen and (min-width: 768px) {
-  .card-menu {
-    width: 42em;
-  }
-}
-.card-menu h2 {
-  font-size: 16px;
-  text-transform: uppercase;
-  height: 27px;
-  margin-left: 15px;
-  border-bottom: solid 3px #99E2D0;
-  width: 10%;
-}
-@media screen and (min-width: 768px) {
-  .card-menu h2 {
-    width: 5%;
-  }
-}
-
-.menu-restaurant {
+.full-menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,51 +814,25 @@ footer .hover a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  -webkit-transition: padding-right 450ms ease-in-out;
-  -o-transition: padding-right 450ms ease-in-out;
-  transition: padding-right 450ms ease-in-out;
+  width: 100%;
 }
-.menu-restaurant article {
-  margin: 15px;
-  position: relative;
-  height: 4em;
+.full-menus h2 {
+  font-size: 16px;
+  font-weight: 300;
+  height: 27px;
+  margin-left: 15px;
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
 }
-.menu-restaurant article h3 {
-  margin: 10px 0 5px 5px;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  overflow: hidden;
+@media screen and (min-width: 768px) {
+  .full-menus h2 {
+    width: 5%;
+  }
 }
-.menu-restaurant article p {
-  font-size: 15px;
-  margin: 0 0 5px 5px;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  overflow: hidden;
+.full-menus .card-menu {
+  padding-right: 17px;
 }
-.menu-restaurant article .price {
-  position: absolute;
-  top: 38px;
-  right: 15px;
-}
-.menu-restaurant article:hover .check {
-  opacity: 1;
-  -webkit-transform: translate(-50px);
-      -ms-transform: translate(-50px);
-          transform: translate(-50px);
-}
-.menu-restaurant article .check {
-  visibility: hidden;
-}
-.menu-restaurant article .check:hover {
+.full-menus .card-menu:hover .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,21 +846,187 @@ footer .hover a {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.menu-restaurant article .check i:checked, .menu-restaurant article .check i {
+
+.menus {
+  display: grid;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-transition: -webkit-transform 20ms 350ms;
+  transition: -webkit-transform 20ms 350ms;
+  -o-transition: transform 20ms 350ms;
+  transition: transform 20ms 350ms;
+  transition: transform 20ms 350ms, -webkit-transform 20ms 350ms;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  position: relative;
+  height: 4em;
+  /*
+  &:hover .fa-circle-check {
+      transform: rotate(360deg);
+  }*/
+}
+@media screen and (min-width: 768px) {
+  .menus {
+    width: 100%;
+  }
+}
+.menus:hover .check {
+  visibility: visible;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.menus h3, .menus p {
+  margin: 0 10px;
+}
+.menus p {
+  font-size: 15px;
+}
+.menus:hover .menu-price {
+  right: 2em;
+}
+@media screen and (min-width: 768px) {
+  .menus:hover .menu-price {
+    right: 5em;
+  }
+}
+.menus .menu-price {
+  position: absolute;
+  justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  top: -1px;
+  right: -14px;
+}
+.menus .menu-price .price {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+.menus .menu-price .price:hover {
+  right: 53px;
+}
+.menus:hover .check {
+  opacity: 1;
+  -webkit-transform: translate(-50px);
+      -ms-transform: translate(-50px);
+          transform: translate(-50px);
+}
+.menus .check {
+  visibility: hidden;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  background-color: #99E2D0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  width: 10%;
+  height: 4em;
+  right: -51px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menus .check:hover {
+  visibility: visible;
+}
+.menus .check i {
   visibility: visible;
   color: white;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+.fa-heart {
+  background-color: transparent;
+  margin-right: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.fa-heart i {
+  width: 22px;
+  height: 21px;
+}
+.fa-heart:hover {
+  -webkit-animation: heart 1s 0s forwards;
+          animation: heart 1s 0s forwards;
+}
+
+/*
+.menu-restaurant {
+    @include flex(column,none,none);
+    transition: padding-right 450ms ease-in-out;
+    article {
+        margin: 15px;
+        position: relative;
+        height: 4em;
+       &:hover .menu-price {
+            right: 8em;
+        }
+        &:hover .check {
+            display: flex;
+            visibility: visible;
+            width: 10%;
+            background-color: $card-badge-color;
+            position: absolute;
+            height: 4em;
+            right: -57px;
+            top: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+             }
+        h3 {
+            margin: 10px 0 5px 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        p {
+            font-size: $txt;
+            margin: 0 0 5px 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .menu-price {
+            position: absolute;
+            top: 38px;
+            right: 15px;
+        }
+        &:hover .check {
+            opacity: 1;
+            transform: translate(-350px);
+        }
+        .check {
+            visibility: hidden;
+
+             & i:checked, & i {
+                 visibility: visible;
+                 color: white;
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 }
+             }
+    }
+}
+
+   */
 .command {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -959,4 +1043,4 @@ footer .hover a {
   width: 186px;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvVXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9iYXNlL19zdHlsZS5zY3NzIiwiLi4vc3R5bGUuY3NzIiwiLi4vLi4vLi4vc2Fzcy9VdGlscy9fbWl4aW5zLnNjc3MiLCIuLi8uLi8uLi9zYXNzL2Jhc2UvX21lbnUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXQTtTQUFBO0FDWEE7RUFDSSxpQ0RpQlc7RUNoQlgsZ0JBQUE7RUFDQSxXQUFBO0FDR0o7O0FEQUE7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0FDR0o7O0FEREE7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDhCQUFBO0VBQUEsNkJBQUE7TUFBQSx1QkFBQTtVQUFBLG1CQUFBO0VBQ0Esa0JBQUE7QUNJSjtBREZJO0VBQ0ksZUFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtBQ0lSO0FESFE7RUFDSSxZQUFBO0VBQ0EsZUFBQTtBQ0taOztBRERBO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw4QkFBQTtFQUFBLDZCQUFBO01BQUEsdUJBQUE7VUFBQSxtQkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLFNBQUE7RUFDQSxXQUFBO0VBQ0EsbUJEbENXO0VDbUNYLGtCQUFBO0FDSUo7QURGSTtFQUNJLFlBQUE7RUFDQSxnQkFBQTtBQ0lSOztBRERBO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFB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SUFDRSw0SEFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDV047RURUSTtJQUNFLHVGQUFBO0lBQUEsd0RBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNXTjtBQUNGOztBRDdFQTtFQUNJO0lBQ0ksMEhBQUE7SUFBQSxxRUFBQTtJQUFBLGdFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDV047RURUSTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ1dOO0VEVEk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNXTjtFRFRJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDV047RURUSTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ1dOO0VEVEk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNXTjtFRFRJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDV047RURUSTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ1dOO0VEVEk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNXTjtFRFRJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDV047RURU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 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvVXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9VdGlscy9fa2V5ZnJhbWVzLnNjc3MiLCIuLi9zdHlsZS5jc3MiLCIuLi8uLi8uLi9zYXNzL2Jhc2UvX3N0eWxlLnNjc3MiLCIuLi8uLi8uLi9zYXNzL1V0aWxzL19taXhpbnMuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvYmFzZS9fbWVudS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVdBO1NBQUE7QUNYQTtFQUNJO0lBQ0ksMEhBQUE7SUFBQSxnRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSx1RkFBQTtJQUFBLHdEQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047QUFDRjtBRHJFQTtFQUNJO0lBQ0ksMEhBQUE7SUFBQSxxRUFBQTtJQUFBLGdFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLDRIQUFBO0lBQUEsdUVBQUE7SUFBQSxrRUFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7SUFDQSxpQkFBQTtFQ0dOO0VEREk7SUFDRSw0SEFBQTtJQUFBLHVFQUFBO0lBQUEsa0VBQUE7SUFDQSw2QkFBQTtJQUNBLGtCQUFBO0lBQ0EsaUJBQUE7RUNHTjtFRERJO0lBQ0UsNEhBQUE7SUFBQSx1RUFBQTtJQUFBLGtFQUFBO0lBQ0EsNkJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0VDR047RURESTtJQUNFLHVGQUFBO0lBQUEsNkRBQUE7SUFBQSx3REFBQTtJQUNBLDZCQUFBO0lBQ0Esa0JBQUE7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 */

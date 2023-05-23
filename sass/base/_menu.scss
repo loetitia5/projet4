@@ -74,9 +74,6 @@
     .card-menu {
         padding-right: 17px;
     
-        &:hover .menu-price {
-            right: 6em;
-        }
         &:hover .check {
             display: flex;
             visibility: visible;
@@ -95,6 +92,7 @@
     display: grid;
     animation-duration: 1s;
     animation-name: slidein;
+    transition: transform 20ms 350ms;
     background-color: white;
     border-radius: 15px;
     margin: 10px;
@@ -113,16 +111,24 @@
     p {
         font-size: $txt;  
     }
+    &:hover .menu-price {
+        right: 2em;
+        @include breakpoints-tablet {
+            right: 5em;
+        }   
+    }
     .menu-price {
         position: absolute;
         justify-self: end;
         align-self: flex-end;
         top: -1px;
         right: -14px;
+        
         .price {
             position: absolute;
             top: 30px;
             right: 15px;
+            
             &:hover {
                 right: 53px;
             }
@@ -162,63 +168,7 @@
         }
     }
 
-    @keyframes slidein {
-        from {
-          margin-top: 100%;
-          
-          visibility:hidden;
-        }
-      
-       50%{
-            visibility:hidden;
-          
-        }
-        60%{
-            visibility:visible;
-          margin-top: 25%;
-        }
-         70%{
-            visibility:visible;
-          margin-top: 20%;
-            }
-         80%{
-            visibility:visible;
-          margin-top: 15%;
-          
-        }
-         90%{
-            visibility:visible;
-            margin-top: 10%;
-            }
-         95%{
-            visibility:visible;
-          margin-top: 5%;
-           }
-      
-        to {
-          margin-top: 0%;
-          visibility: visible;
-        }
-      }
-    
-   /* 
-.menu {
-    @include breakpoints-tablet {
-            
-    }
-    h2 {
-        font-size: $txt + 1;
-        font-weight: 300;
-        height: 27px;
-        margin-left: 15px;
-        border-bottom: solid 3px  $card-badge-color;
-        width: 10%;
-        @include breakpoints-tablet {
-            width: 5%;
-        }
-    }
-        
-}*/
+
 
 .fa-heart {
     background-color: transparent;
@@ -233,91 +183,7 @@
     }
 }
 
-@keyframes heart {
-    0% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      10% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      20% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      30% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      40% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      50% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      60% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      70% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      80% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      90% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-      100% {
-        background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-      }
-}
-.menu {
-    @include breakpoints-tablet {
-        
-    }
-    h2 {
-        font-size: $txt + 1;
-        text-transform: uppercase;
-        height: 27px;
-        margin-left: 15px;
-        border-bottom: solid 3px  $card-badge-color;
-        width: 10%;
-        @include breakpoints-tablet {
-            width: 5%;
-        }
-    }
-    
-}/*
+/*
 .menu-restaurant {
     @include flex(column,none,none);
     transition: padding-right 450ms ease-in-out;
