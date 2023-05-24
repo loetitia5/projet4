@@ -331,11 +331,11 @@ footer {
     width: 12em
     }
 }
-.grid-en2 {
+.grid-end2 {
     @include breakpoints-tablet {
     grid-column-end: 4;
     grid-column-start: 3;
-
+    width: 11em;
     }
 }
 .grid-end3 {
@@ -343,6 +343,7 @@ footer {
     grid-column-end: 5;
     grid-column-start: 4;
     margin: 0px 9px;
+    width: 8em;
     }
 }
 .grid-end4 {

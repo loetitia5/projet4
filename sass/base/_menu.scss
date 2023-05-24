@@ -1,7 +1,11 @@
+.position-menu {
+    position: relative;
+    width: 100%;
+}
 .arrow {
     display: flex;
     align-self: center;
-    padding-left: 10%;
+    position: absolute;
     a {
         text-decoration: none;
     
@@ -12,7 +16,7 @@
             height: 16px;
         }
     }
-}
+} 
 .menu {
     position: relative;
     display: flow-root;
@@ -50,9 +54,7 @@
             width: 70%;
             font-family: 'Shrikhand', cursive;
             margin-left: 10px;
-            @include breakpoints-tablet {
-                width: 33%;
-            }
+            
         }
     }
 }

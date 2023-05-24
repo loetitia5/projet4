@@ -455,9 +455,10 @@ footer .hover a {
 }
 
 @media screen and (min-width: 768px) {
-  .grid-en2 {
+  .grid-end2 {
     grid-column-end: 4;
     grid-column-start: 3;
+    width: 11em;
   }
 }
 
@@ -466,6 +467,7 @@ footer .hover a {
     grid-column-end: 5;
     grid-column-start: 4;
     margin: 0px 9px;
+    width: 8em;
   }
 }
 
@@ -477,10 +479,15 @@ footer .hover a {
   }
 }
 
+.position-menu {
+  position: relative;
+  width: 100%;
+}
+
 .arrow {
   display: flex;
   align-self: center;
-  padding-left: 10%;
+  position: absolute;
 }
 .arrow a {
   text-decoration: none;
@@ -534,11 +541,6 @@ footer .hover a {
   width: 70%;
   font-family: "Shrikhand", cursive;
   margin-left: 10px;
-}
-@media screen and (min-width: 768px) {
-  .card-food .title h1 {
-    width: 33%;
-  }
 }
 
 .full-menus {
