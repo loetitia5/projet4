@@ -1,6 +1,7 @@
 .position-menu {
     position: relative;
     width: 100%;
+    
 }
 .arrow {
     display: flex;
@@ -12,8 +13,8 @@
         i {
             display: flex;
             color: $main-text-color;
-            width: 17px;
-            height: 16px;
+            width: 1em;
+            height: 1em;
         }
     }
 } 
@@ -175,75 +176,13 @@
     margin-right: 20px;
     align-self: center;
     i {
-        width: 22px;
+        width: 2em;
         height: 21px;
     }
     &:hover { 
         animation: heart 1s 0s forwards;
     }
 }
-
-/*
-.menu-restaurant {
-    @include flex(column,none,none);
-    transition: padding-right 450ms ease-in-out;
-    article {
-        margin: 15px;
-        position: relative;
-        height: 4em;
-       &:hover .menu-price {
-            right: 8em;
-        }
-        &:hover .check {
-            display: flex;
-            visibility: visible;
-            width: 10%;
-            background-color: $card-badge-color;
-            position: absolute;
-            height: 4em;
-            right: -57px;
-            top: 0;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-             }
-        h3 {
-            margin: 10px 0 5px 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        p {
-            font-size: $txt;
-            margin: 0 0 5px 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .menu-price {
-            position: absolute;
-            top: 38px;
-            right: 15px;
-        }
-        &:hover .check {
-            opacity: 1;
-            transform: translate(-350px);
-        }
-        .check {
-            visibility: hidden;
-            
-             & i:checked, & i {
-                 visibility: visible;
-                 color: white;
-                 width: 100%;
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 }
-             }
-    }
-}
-
-   */
 .command {
     display: flex;
     height: 7em;

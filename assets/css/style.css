@@ -125,7 +125,7 @@ header .logo {
   align-items: center;
 }
 header .logo img {
-  height: 44px;
+  height: 4em;
   width: 40%;
 }
 
@@ -308,8 +308,8 @@ li {
   top: 19px;
   right: 39px;
   background-color: #99E2D0;
-  width: 80px;
-  height: 29px;
+  width: 24%;
+  height: 2em;
   text-align: center;
   color: #008766;
   border-radius: 5px;
@@ -326,7 +326,7 @@ li {
 .card img {
   object-fit: cover;
   width: 100%;
-  height: 231px;
+  height: 14em;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -351,7 +351,7 @@ li {
   background-color: transparent;
 }
 .card-txt .fa-heart i {
-  width: 22px;
+  width: 2em;
   height: 21px;
 }
 .card-txt .fa-heart:hover {
@@ -399,7 +399,7 @@ footer .logo-footer {
 }
 footer .logo-footer img {
   width: 137px;
-  height: 27px;
+  height: 1.5em;
   filter: invert(1);
   padding-top: 20px;
   padding-right: 10px;
@@ -495,8 +495,8 @@ footer .hover a {
 .arrow a i {
   display: flex;
   color: black;
-  width: 17px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
 }
 
 .menu {
@@ -664,74 +664,13 @@ footer .hover a {
   align-self: center;
 }
 .fa-heart i {
-  width: 22px;
+  width: 2em;
   height: 21px;
 }
 .fa-heart:hover {
   animation: heart 1s 0s forwards;
 }
 
-/*
-.menu-restaurant {
-    @include flex(column,none,none);
-    transition: padding-right 450ms ease-in-out;
-    article {
-        margin: 15px;
-        position: relative;
-        height: 4em;
-       &:hover .menu-price {
-            right: 8em;
-        }
-        &:hover .check {
-            display: flex;
-            visibility: visible;
-            width: 10%;
-            background-color: $card-badge-color;
-            position: absolute;
-            height: 4em;
-            right: -57px;
-            top: 0;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-             }
-        h3 {
-            margin: 10px 0 5px 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        p {
-            font-size: $txt;
-            margin: 0 0 5px 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .menu-price {
-            position: absolute;
-            top: 38px;
-            right: 15px;
-        }
-        &:hover .check {
-            opacity: 1;
-            transform: translate(-350px);
-        }
-        .check {
-            visibility: hidden;
-
-             & i:checked, & i {
-                 visibility: visible;
-                 color: white;
-                 width: 100%;
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 }
-             }
-    }
-}
-
-   */
 .command {
   display: flex;
   height: 7em;
