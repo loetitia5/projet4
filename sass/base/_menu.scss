@@ -90,9 +90,7 @@
 } 
 .menus {
     display: grid;
-    animation-duration: 1s;
-    animation-name: slidein;
-    transition: transform 20ms 350ms;
+    animation: slidein 2s 1;
     background-color: white;
     border-radius: 15px;
     margin: 10px;
