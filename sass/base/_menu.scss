@@ -108,6 +108,10 @@
     }
     h3, p {
         margin: 0 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     p {
         font-size: $txt;  

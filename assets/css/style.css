@@ -601,6 +601,10 @@ footer .hover a {
 }
 .menus h3, .menus p {
   margin: 0 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menus p {
   font-size: 15px;
