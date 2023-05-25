@@ -564,7 +564,7 @@ footer .hover a {
 .full-menus .card-menu {
   padding-right: 17px;
 }
-.full-menus .card-menu:hover .check {
+.full-menus .card-menu .check {
   display: flex;
   visibility: visible;
   width: 10%;
@@ -577,6 +577,13 @@ footer .hover a {
   border-bottom-right-radius: 15px;
 }
 
+.card-menu .fa-circle-check {
+  transition: transform 1s ease-in-out;
+}
+.card-menu:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
+
 .menus {
   display: grid;
   animation: slidein 2s 1;
@@ -585,17 +592,13 @@ footer .hover a {
   margin: 10px;
   position: relative;
   height: 4em;
-  /*
-  &:hover .fa-circle-check {
-      transform: rotate(360deg);
-  }*/
 }
 @media screen and (min-width: 768px) {
   .menus {
     width: 100%;
   }
 }
-.menus:hover .check {
+.menus .check {
   visibility: visible;
   transition-duration: 1s;
 }
@@ -623,6 +626,7 @@ footer .hover a {
   align-self: flex-end;
   top: -1px;
   right: -14px;
+  transition-duration: 1s;
 }
 .menus .menu-price .price {
   position: absolute;
@@ -635,6 +639,9 @@ footer .hover a {
 .menus:hover .check {
   opacity: 1;
   transform: translate(-50px);
+}
+.menus:hover .fa-circle-check {
+  transform: rotate(360deg);
 }
 .menus .check {
   visibility: hidden;
@@ -661,6 +668,9 @@ footer .hover a {
   width: 100%;
   justify-content: center;
 }
+.menus:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
 
 .fa-heart {
   background-color: transparent;
@@ -684,5 +694,7 @@ footer .hover a {
 .command .control {
   width: 186px;
 }
+
+/*@import "./Layout/loader";*/
 
 /*# sourceMappingURL=style.css.map */

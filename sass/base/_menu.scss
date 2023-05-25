@@ -76,8 +76,8 @@
     }
     .card-menu {
         padding-right: 17px;
-    
-        &:hover .check {
+       
+        & .check {
             display: flex;
             visibility: visible;
             width: 10%;
@@ -89,6 +89,14 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             }
+    }
+}
+.card-menu {
+    & .fa-circle-check {
+        transition: transform 1s ease-in-out;
+    }
+    &:hover .fa-circle-check {
+        transform: rotate(360deg);
     }
 } 
 .menus {
@@ -102,7 +110,7 @@
     @include breakpoints-tablet {
         width: 100%;
     }
-    &:hover .check {
+    & .check {
         visibility: visible;
         transition-duration: 1s;
     }
@@ -128,6 +136,7 @@
         align-self: flex-end;
         top: -1px;
         right: -14px;
+        transition-duration: 1s;
         
         .price {
             position: absolute;
@@ -142,10 +151,10 @@
     &:hover .check{
         opacity: 1;
         transform: translate(-50px);
-        }   /*
+        }   
             &:hover .fa-circle-check {
                 transform: rotate(360deg);
-            }*/
+            }
     .check {
         visibility: hidden;
         transition-duration: 1s;
@@ -170,6 +179,9 @@
             width: 100%;
             justify-content: center;
             }
+        }
+        &:hover .fa-circle-check {
+            transform: rotate(360deg);
         }
     }
 
