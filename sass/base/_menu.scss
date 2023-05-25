@@ -52,10 +52,12 @@
             justify-content: center;
         }
         h1 {
-            width: 70%;
             font-family: 'Shrikhand', cursive;
-            margin-left: 10px;
-            
+            margin-left: 10px; 
+        }
+        i {
+            margin-right: 0;
+            margin-left: 23px;
         }
     }
 }
@@ -69,7 +71,7 @@
         height: 27px;
         margin-left: 15px;
         border-bottom: solid 3px $card-badge-color;
-        width: 10%;
+        width: 6%;
         @include breakpoints-tablet {
             width: 5%;
         }
@@ -80,7 +82,7 @@
         & .check {
             display: flex;
             visibility: visible;
-            width: 10%;
+            width: 18%;
             background-color: $card-badge-color;
             position: absolute;
             height: 4em;
@@ -88,8 +90,14 @@
             top: 0;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+            @include breakpoints-tablet {
+                width: 12%;
             }
-    }
+            @include breakpoints-desktop {
+                width: 8%;
+            }
+        }
+    }   
 }
 .card-menu {
     &:hover .fa-circle-check {
@@ -105,6 +113,8 @@
     margin: 10px;
     position: relative;
     height: 4em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
     @include breakpoints-tablet {
         width: 100%;
@@ -114,7 +124,7 @@
         transition-duration: 1s;
     }
     h3, p {
-        width: 80%;
+        width: 60%;
         margin: 0 10px;
         cursor: pointer;
         white-space: nowrap;
@@ -132,17 +142,18 @@
     }
     .menu-price {
         position: absolute;
-        justify-self: end;
-        align-self: flex-end;
-        top: -1px;
-        right: -14px;
+        top: 32px;
+        right: 10px;
         transition-duration: 1s;
+        display: flex;
+        align-items: center;
         
         .price {
-            position: absolute;
+         /*   position: absolute;
             top: 30px;
             right: 15px;
-            
+            */
+
             &:hover {
                 right: 53px;
             }

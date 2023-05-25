@@ -1,6 +1,5 @@
 body {
     font-family: $writing-type; 
-
     margin: 0px;
 }
 
@@ -22,6 +21,9 @@ header {
         img {
             height: 4em;
             width: 40%;
+            @include breakpoints-tablet {
+                width: 22%;
+            }
         }
     }
 }
@@ -158,6 +160,9 @@ ol {
  .fa-store {
     color: $li-icon-color;
  }
+h2 {
+    margin-left: 40px;
+}
 .button-function {
     i {
         margin: 30px;
@@ -192,14 +197,14 @@ ol {
     
     p {
         position: absolute;
-        top: 19px;
-        right: 39px;
+        top: -3px;
+        right: 19px;
         background-color: $card-badge-color;
-        width: 24%;
+        width: 27%;
         height: 2em;
         text-align: center;
         color: $badge-text-color;
-        border-radius: 5px;
+        border-radius: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -235,7 +240,7 @@ ol {
         position: absolute;
         z-index: 1;
         top: 1em;
-        right: 2em;
+        right: 0em;
         background-color: transparent;
 
         i {
@@ -266,7 +271,7 @@ footer {
     flex-direction: column;
     @include breakpoints-tablet {
         flex-direction: row;
-        justify-content: center;    
+        justify-content: end;    
     }
     
     .logo-footer {
@@ -293,6 +298,7 @@ footer {
         @include breakpoints-tablet {
             display: grid;
             align-items: end;
+            padding: 0;
         }
         li {
             display: flex;
@@ -328,7 +334,7 @@ footer {
     @include breakpoints-tablet {
     grid-column-end: 3;
     grid-column-start: 2;
-    width: 12em;
+    width: 12.5em;
     }
 }
 .grid-end2 {

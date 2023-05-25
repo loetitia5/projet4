@@ -127,6 +127,11 @@ header .logo img {
   height: 4em;
   width: 40%;
 }
+@media screen and (min-width: 768px) {
+  header .logo img {
+    width: 22%;
+  }
+}
 
 .bar-search {
   display: flex;
@@ -267,6 +272,10 @@ li {
   color: #9356DC;
 }
 
+h2 {
+  margin-left: 40px;
+}
+
 .button-function i {
   margin: 30px;
 }
@@ -304,14 +313,14 @@ li {
 }
 .img-restaurants p {
   position: absolute;
-  top: 19px;
-  right: 39px;
+  top: -3px;
+  right: 19px;
   background-color: #99E2D0;
-  width: 24%;
+  width: 27%;
   height: 2em;
   text-align: center;
   color: #008766;
-  border-radius: 5px;
+  border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +355,7 @@ li {
   position: absolute;
   z-index: 1;
   top: 1em;
-  right: 2em;
+  right: 0em;
   background-color: transparent;
 }
 .card-txt .fa-heart i {
@@ -381,7 +390,7 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
   }
 }
 footer .logo-footer {
@@ -414,6 +423,7 @@ footer ul {
   footer ul {
     display: grid;
     align-items: end;
+    padding: 0;
   }
 }
 footer ul li {
@@ -449,7 +459,7 @@ footer .hover a {
   .grid-end1 {
     grid-column-end: 3;
     grid-column-start: 2;
-    width: 12em;
+    width: 12.5em;
   }
 }
 
@@ -537,9 +547,12 @@ footer .hover a {
   }
 }
 .card-food .title h1 {
-  width: 70%;
   font-family: "Shrikhand", cursive;
   margin-left: 10px;
+}
+.card-food .title i {
+  margin-right: 0;
+  margin-left: 23px;
 }
 
 .full-menus {
@@ -553,7 +566,7 @@ footer .hover a {
   height: 27px;
   margin-left: 15px;
   border-bottom: solid 3px #99E2D0;
-  width: 10%;
+  width: 6%;
 }
 @media screen and (min-width: 768px) {
   .full-menus h2 {
@@ -566,7 +579,7 @@ footer .hover a {
 .full-menus .card-menu .check {
   display: flex;
   visibility: visible;
-  width: 10%;
+  width: 18%;
   background-color: #99E2D0;
   position: absolute;
   height: 4em;
@@ -574,6 +587,16 @@ footer .hover a {
   top: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .full-menus .card-menu .check {
+    width: 12%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .full-menus .card-menu .check {
+    width: 8%;
+  }
 }
 
 .card-menu:hover .fa-circle-check {
@@ -589,6 +612,8 @@ footer .hover a {
   margin: 10px;
   position: relative;
   height: 4em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
@@ -601,7 +626,7 @@ footer .hover a {
   transition-duration: 1s;
 }
 .menus h3, .menus p {
-  width: 80%;
+  width: 60%;
   margin: 0 10px;
   cursor: pointer;
   white-space: nowrap;
@@ -621,16 +646,17 @@ footer .hover a {
 }
 .menus .menu-price {
   position: absolute;
-  justify-self: end;
-  align-self: flex-end;
-  top: -1px;
-  right: -14px;
+  top: 32px;
+  right: 10px;
   transition-duration: 1s;
+  display: flex;
+  align-items: center;
 }
 .menus .menu-price .price {
-  position: absolute;
-  top: 30px;
-  right: 15px;
+  /*   position: absolute;
+     top: 30px;
+     right: 15px;
+     */
 }
 .menus .menu-price .price:hover {
   right: 53px;
