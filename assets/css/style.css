@@ -103,7 +103,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 375px;
+  /* min-width: 375px; */
   margin: 0px;
 }
 
@@ -590,6 +590,7 @@ footer .hover a {
   margin: 10px;
   position: relative;
   height: 4em;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .menus {
@@ -601,6 +602,7 @@ footer .hover a {
   transition-duration: 1s;
 }
 .menus h3, .menus p {
+  width: 80%;
   margin: 0 10px;
   cursor: pointer;
   white-space: nowrap;
