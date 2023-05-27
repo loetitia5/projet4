@@ -770,17 +770,18 @@ footer .hover a {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 9999;
-  animation: loader 1s ease-in-out 3s forwards;
+  animation: loader 5s ease-in-out 3s forwards;
   pointer-events: none;
-  margin-left: 9px;
 }
 .loader .animation-loader {
   color: #9356DC;
-  display: flow-root;
   align-self: center;
   font-size: xxx-large;
+  transform: translateX(-200%);
 }
 .loader .animation-loader i {
   transform: rotate(79deg);
@@ -803,12 +804,15 @@ footer .hover a {
   font-weight: bolder;
   color: #9356DC;
   position: absolute;
-  top: 64%;
-  right: -141px;
+  top: 14%;
+  right: -78px;
   /* transition: right 5s, transform 5s;
-   white-space: nowrap;
-   transform: translateX(196%);*/
-  animation: title 10s 1;
+    white-space: nowrap;
+    transform: translateX(196%);*/
+  animation: title 8s 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
