@@ -141,9 +141,12 @@
         font-size: $txt;  
     }
     &:hover .menu-price {
-        right: 3.5em;
+        right: 4.5em;
         @include breakpoints-tablet {
-            right: 5em;
+            right: 6em;
+        }   
+        @include breakpoints-desktop {
+            right: 8em;
         }   
     }
     .menu-price {
