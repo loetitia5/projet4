@@ -579,7 +579,7 @@ footer .hover a {
 .full-menus .card-menu .check {
   display: flex;
   visibility: visible;
-  width: 18%;
+  width: 20%;
   background-color: #99E2D0;
   position: absolute;
   height: 4em;
@@ -597,6 +597,9 @@ footer .hover a {
   .full-menus .card-menu .check {
     width: 8%;
   }
+}
+.full-menus .card-menu .check:hover {
+  width: 12%;
 }
 
 .card-menu:hover .fa-circle-check {
@@ -626,18 +629,21 @@ footer .hover a {
   transition-duration: 1s;
 }
 .menus h3, .menus p {
-  width: 60%;
+  width: 80%;
   margin: 0 10px;
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menus:hover p {
+  width: 60%;
+}
 .menus p {
   font-size: 15px;
 }
 .menus:hover .menu-price {
-  right: 2em;
+  right: 3.5em;
 }
 @media screen and (min-width: 768px) {
   .menus:hover .menu-price {

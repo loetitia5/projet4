@@ -82,7 +82,7 @@
         & .check {
             display: flex;
             visibility: visible;
-            width: 18%;
+            width: 20%;
             background-color: $card-badge-color;
             position: absolute;
             height: 4em;
@@ -96,6 +96,9 @@
             @include breakpoints-desktop {
                 width: 8%;
             }
+        }
+        & .check:hover {
+            width: 12%;
         }
     }   
 }
@@ -124,18 +127,21 @@
         transition-duration: 1s;
     }
     h3, p {
-        width: 60%;
+        width: 80%;
         margin: 0 10px;
         cursor: pointer;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
+    &:hover p{
+        width: 60%;
+        }
     p {
         font-size: $txt;  
     }
     &:hover .menu-price {
-        right: 2em;
+        right: 3.5em;
         @include breakpoints-tablet {
             right: 5em;
         }   
