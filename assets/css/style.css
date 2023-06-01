@@ -645,14 +645,9 @@ footer .hover a {
 .menus:hover .menu-price {
   right: 20%;
 }
-@media screen and (min-width: 768px) {
-  .menus:hover .menu-price {
-    right: 6em;
-  }
-}
 @media screen and (min-width: 1024px) {
   .menus:hover .menu-price {
-    right: 8em;
+    right: 8%;
   }
 }
 .menus .menu-price {
