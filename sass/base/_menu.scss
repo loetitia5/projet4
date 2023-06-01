@@ -141,7 +141,7 @@
         font-size: $txt;  
     }
     &:hover .menu-price {
-        right: 4.5em;
+        right: 20%;
         @include breakpoints-tablet {
             right: 6em;
         }   

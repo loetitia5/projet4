@@ -643,7 +643,7 @@ footer .hover a {
   font-size: 15px;
 }
 .menus:hover .menu-price {
-  right: 4.5em;
+  right: 20%;
 }
 @media screen and (min-width: 768px) {
   .menus:hover .menu-price {
