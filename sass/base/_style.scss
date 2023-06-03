@@ -294,7 +294,9 @@ footer {
     }
     ul {
         list-style-type: none;
-        @include flex(column,none,center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @include breakpoints-tablet {
             display: grid;
             align-items: end;
