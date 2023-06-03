@@ -600,6 +600,11 @@ footer .hover a {
 .full-menus .card-menu .check:hover {
   width: 12%;
 }
+@media screen and (min-width: 1024px) {
+  .full-menus .card-menu .check:hover {
+    width: 8%;
+  }
+}
 
 .card-menu:hover .fa-circle-check {
   transform: rotate(360deg);

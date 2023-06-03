@@ -99,6 +99,9 @@
         }
         & .check:hover {
             width: 12%;
+            @include breakpoints-desktop {
+                width: 8%;
+            }
         }
     }   
 }
